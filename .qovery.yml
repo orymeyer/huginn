@@ -1,0 +1,15 @@
+---
+application:
+  name: "huginn"
+  project: "Qovery-demo-17"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "huginndb"
+  version: "10"
+routers:
+- name: "main-huginn"
+  routes:
+  - application_name: "huginn"
+    paths:
+    - "/*"
